@@ -7,7 +7,7 @@ const Row = ({ y, cols }: RowProps) => {
   return (
     <div className="row">
       {Array.from(Array(cols).keys()).map((x) => (
-        <Cell x={x} y={y} />
+        <Cell key={`cell${x}${y}`} x={x} y={y} />
       ))}
     </div>
   );

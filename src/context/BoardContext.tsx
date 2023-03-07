@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 import { BoardActions, moveReducer, rotateReducer } from "./reducers";
 
 export type BoardState = {

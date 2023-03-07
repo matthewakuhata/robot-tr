@@ -41,7 +41,7 @@ const Board = () => {
   return (
     <div className="board">
       {rows.map((y) => (
-        <Row y={y} cols={state.maxColumns} />
+        <Row y={y} cols={state.maxColumns} key={`row${y}`} />
       ))}
       <button onClick={handleShowReport}>Report</button>
       <ToastContainer
