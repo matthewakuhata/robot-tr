@@ -1,0 +1,27 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/space.webp");
+}
+
+.board button {
+    height: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(33, 33, 33) solid 0.5rem;
+}
+
+.cell img {
+    transition: all 0.5s ease-in;
+}
